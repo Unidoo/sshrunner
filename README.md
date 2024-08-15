@@ -1,4 +1,4 @@
-Enter the path to your IP list file when prompted. The script will execute ./ssh-audit.py for each IP address in the list, capturing the colored output and appending it to ssh-output. Each IP's output will be separated by dashed lines in ssh-output, and the IP being processed will be printed to the terminal. After processing all IPs, it will print "SSH Audit Completed".
+This script prompts you to enter the path to a file containing a list of IP addresses. It then runs ./ssh-audit.py on each IP, appending the results to ssh-output with dashed lines separating each IP's output. Additionally, it identifies and records IPs using weak elliptic curves in weakssh-hosts.txt. After processing all IPs, it outputs the total number of IPs with weak SSH configurations and prints "SSH Audit Completed" to signal the end of the process.
 
 Ensure "ssh-audit.py" is installed and in the same directory.
 
